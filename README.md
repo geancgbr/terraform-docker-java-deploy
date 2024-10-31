@@ -18,15 +18,20 @@ To get started, you need the following:
 
 ## Step by Step Guide
 
-### 1. Create an AWS Account
-- If you don't already have an AWS account, you can create one [here](https://aws.amazon.com/).
+- Create an account on AWS
 
-### 2. Create a User with Programmatic Access
-- Create an IAM user with **programmatic access** (AWS Access Key ID & AWS Secret Access Key).
-- Make sure the user has the necessary permissions to create and manage EC2 instances.
+- Create a user with programmatic access (aws_access_key_id & aws_secret_access_key)
 
-### 3. Install the AWS CLI
-- Install the AWS CLI on your machine by following the instructions [here](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html).
-- Configure the AWS CLI by running the following command:
-  ```bash
-  aws configure
+- Install the AWS CLI on your computer and run 'aws configure'
+
+- Install Terraform CLI on your computer
+
+- Generate a KeyPair to be able to access an EC2 via SSH (ssh-keygen)
+
+- Run 'terraform init' inside the 'infra' folder in the terminal
+
+- Run 'terraform plan' inside 'infra' folder to check terraform build plan
+
+- Run 'terraform apply' inside the 'infra' folder to create the infrastructure
+
+- Run 'terraform destroy' inside the 'infra' folder to destroy all created infrastructure
